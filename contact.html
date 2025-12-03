@@ -31,6 +31,31 @@
     <article>
         <header></header>
 
+        <form id="contactForm" class="flex flex-col p-6 bg-blue-300">
+            <div id="successMessage" class="success"></div>
+            <div class="form-group flex flex-row justify-between p-2">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" class="border-2 border-black"/>
+                </div>
+                <div class="error w-52 border-2 border-black bg-white" id="nameError"></div>
+            </div>
+            <div class="form-group flex flex-row justify-between p-2">
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" class="border-2 border-black"/>
+                </div>
+                <div class="error w-52 border-2 border-black bg-white" id="emailError"></div>
+            </div>
+            <div class="form-group flex flex-row justify-between p-2">
+                <div class="flex items-start">
+                    <label for="message">Message:</label>
+                    <textarea id="message" rows="4" class="border-2 border-black"></textarea>
+                </div>
+                <div class="error w-52 border-2 border-black bg-white" id="messageError"></div>
+            </div>
+            <button type="submit" class="w-32 border-2 border-black">Send</button>
+        </form>
 
     </article>
 </main>
@@ -49,8 +74,6 @@
     </div>
 </footer>
 
-
+<script src="./assets/js/contact-form.js"></script>
 </body>
-
-
 </html>
