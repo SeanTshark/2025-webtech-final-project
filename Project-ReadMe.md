@@ -4,3 +4,14 @@ This project is to act as a fake portfolio, this may change in the future but as
 in ths project is real. 
 
 So please do not use anything from this project, you'll get no response.
+
+Chosen base colours
+
+| Name  | RGB           | HEX     | 
+|-------|---------------|---------| 
+| black | 0, 0, 0       | #000000 | 
+| white | 255, 255, 255 | #FFFFFF | 
+| gray  | 156, 163, 175 | #9CA3AF | 
+| blue  | 147, 197, 253 | #93C5FD | 
+| green | 21, 128, 61   | #15803D | 
+| teal  | 17, 94, 89    | #115E59 |
