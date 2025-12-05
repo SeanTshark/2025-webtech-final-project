@@ -14,11 +14,15 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     let isValid = true;
 
     // Validate Name
+    let nameRegex = /^[A-Za-z\s'-]+$/;
     if (name === '') {
         document.getElementById('nameError').textContent = 'Name is required';
         isValid = false;
     } else if (name.length < 3) {
         document.getElementById('nameError').textContent = 'Name has to more than 3 characters';
+        isValid = false;
+    } else if (!nameRegex.test(name)) {
+        document.getElementById('nameError').textContent = 'Valid name is required';
         isValid = false;
     }
 
@@ -33,8 +37,12 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     }
 
     // Validate Message
+    let messageRegex = /^[^<>]{1,2000}$/;
     if (message === '') {
         document.getElementById('messageError').textContent = 'Message cannot be empty';
+        isValid = false;
+    } else if (!messageRegex.test(message)) {
+        document.getElementById('messageError').textContent = 'Valid message is required';
         isValid = false;
     }
 
